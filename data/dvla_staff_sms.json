@@ -1,0 +1,60 @@
+{
+  "version": "1.0.0",
+  "driver": "SQLite / Local File Database",
+  "connectionString": "file:./data/dvla_staff_sms.json",
+  "mysqlConfig": {
+    "host": "localhost",
+    "port": 3306,
+    "user": "root",
+    "password": "",
+    "database": "dvla_staff_sms",
+    "connected": false
+  },
+  "staff": [
+    { "id": "DVLA-00125", "name": "John Mensah", "department": "Human Resources", "position": "HR Director", "region": "Greater Accra", "station": "Head Office (14th Ave, Accra)", "phone": "024 XXX 1234", "email": "j.mensah@dvla.gov.gh", "employmentType": "Management", "status": "Active" },
+    { "id": "DVLA-00452", "name": "Ama Boateng", "department": "Finance", "position": "Senior Accountant", "region": "Greater Accra", "station": "Head Office (14th Ave, Accra)", "phone": "020 XXX 5678", "email": "a.boateng@dvla.gov.gh", "employmentType": "Permanent Staff", "status": "Active" },
+    { "id": "DVLA-00983", "name": "Kwame Asante", "department": "Information Technology", "position": "Head of IT Systems", "region": "Greater Accra", "station": "Head Office (14th Ave, Accra)", "phone": "055 XXX 9012", "email": "k.asante@dvla.gov.gh", "employmentType": "Management", "status": "Active" },
+    { "id": "DVLA-01104", "name": "Kofi Annan Baah", "department": "Operations", "position": "Licensing Officer", "region": "Greater Accra", "station": "37 Driver & Vehicle Licensing Center", "phone": "024 XXX 3344", "email": "k.baah@dvla.gov.gh", "employmentType": "Officers", "status": "Active" },
+    { "id": "DVLA-01290", "name": "Abena Owusu-Ansah", "department": "Administration", "position": "Administrative Officer", "region": "Greater Accra", "station": "Tema Station", "phone": "027 XXX 8890", "email": "a.owusu@dvla.gov.gh", "employmentType": "Permanent Staff", "status": "Active" },
+    { "id": "DVLA-01455", "name": "Kwesi Appiah", "department": "Operations", "position": "Vehicle Inspection Supervisor", "region": "Ashanti", "station": "Kumasi Regional Office (Asokwa)", "phone": "020 XXX 7711", "email": "k.appiah@dvla.gov.gh", "employmentType": "Supervisors", "status": "Active" },
+    { "id": "DVLA-01622", "name": "Efua Kyei", "department": "Legal", "position": "Legal Counsel", "region": "Greater Accra", "station": "Head Office (14th Ave, Accra)", "phone": "054 XXX 4422", "email": "e.kyei@dvla.gov.gh", "employmentType": "Permanent Staff", "status": "Active" },
+    { "id": "DVLA-01890", "name": "Yaw Ofori", "department": "Procurement", "position": "Procurement Manager", "region": "Greater Accra", "station": "Head Office (14th Ave, Accra)", "phone": "026 XXX 1155", "email": "y.ofori@dvla.gov.gh", "employmentType": "Management", "status": "Active" },
+    { "id": "DVLA-02031", "name": "Akua Donkor", "department": "Human Resources", "position": "Training Coordinator", "region": "Greater Accra", "station": "Head Office (14th Ave, Accra)", "phone": "024 XXX 6677", "email": "a.donkor@dvla.gov.gh", "employmentType": "Officers", "status": "Active" },
+    { "id": "DVLA-02219", "name": "Kojo Kyei-Baffour", "department": "Information Technology", "position": "Network Administrator", "region": "Greater Accra", "station": "Head Office (14th Ave, Accra)", "phone": "050 XXX 9988", "email": "k.baffour@dvla.gov.gh", "employmentType": "Permanent Staff", "status": "Active" },
+    { "id": "DVLA-02380", "name": "Grace Addo", "department": "Human Resources", "position": "HR Officer", "region": "Greater Accra", "station": "Head Office (14th Ave, Accra)", "phone": "024 XXX 4433", "email": "g.addo@dvla.gov.gh", "employmentType": "Officers", "status": "Active" },
+    { "id": "DVLA-02401", "name": "Emmanuel Osei", "department": "Human Resources", "position": "Chief HR Officer", "region": "Greater Accra", "station": "Head Office (14th Ave, Accra)", "phone": "024 XXX 1100", "email": "e.osei@dvla.gov.gh", "employmentType": "Management", "status": "Active" }
+  ],
+  "groups": [
+    { "id": "grp-1", "name": "Human Resources", "category": "Department", "count": 42, "description": "All personnel under the HR directorate across head office & regional centers.", "createdDate": "15 Jan 2026", "lastUpdated": "28 Aug 2026", "members": ["DVLA-00125", "DVLA-02031", "DVLA-02380", "DVLA-02401"] },
+    { "id": "grp-2", "name": "IT Department", "category": "Department", "count": 28, "description": "Software, infrastructure and database management team.", "createdDate": "20 Jan 2026", "lastUpdated": "01 Sep 2026", "members": ["DVLA-00983", "DVLA-02219", "DVLA-03350"] },
+    { "id": "grp-3", "name": "Accra Regional Offices", "category": "Location", "count": 186, "description": "Staff deployed at 37 Center, Tema Station, and Greater Accra operational hubs.", "createdDate": "02 Feb 2026", "lastUpdated": "30 Aug 2026", "members": ["DVLA-01104", "DVLA-01290"] }
+  ],
+  "templates": [
+    { "id": "tpl-1", "title": "Staff Meeting Reminder", "category": "Staff Meeting", "message": "Dear Staff, please be reminded that the monthly departmental meeting will be held on Friday at 10:00 AM in Conference Room A. Attendance is mandatory.", "lastModified": "01 Sep 2026", "createdBy": "Emmanuel Osei (HR Admin)" },
+    { "id": "tpl-2", "title": "General Staff Announcement", "category": "General Announcement", "message": "OFFICIAL NOTICE: Management announces the rollout of the new DVLA digital staff portal. Please check your official email for login credentials.", "lastModified": "28 Aug 2026", "createdBy": "Grace Addo (HR Officer)" }
+  ],
+  "history": [
+    { "id": "SMS-9083", "date": "03 Sep 2026", "time": "10:15 AM", "sender": "Emmanuel Osei", "senderId": "DVLA-HR", "message": "URGENT NOTICE: All Regional Managers are requested to submit Q3 staffing reports to the HR Directorate before 4:00 PM today.", "recipientsSummary": "34 Staff Members", "recipientType": "Group (Management)", "type": "Group", "status": "Delivered", "deliveredCount": 34, "pendingCount": 0, "failedCount": 0, "parts": 1, "totalUnits": 34 }
+  ],
+  "scheduled": [
+    { "id": "SCH-104", "message": "Public Holiday Notice: DVLA Offices nationwide will be closed on Friday for National Founder's Day.", "recipientsSummary": "2,486 Staff Members (All Staff)", "recipientType": "All Staff", "scheduledDate": "2026-09-05", "scheduledTime": "09:00 AM", "senderId": "DVLA-HR", "createdBy": "Emmanuel Osei", "status": "Scheduled" }
+  ],
+  "mnotifyConfig": {
+    "providerName": "mNotify Ghana Enterprise API Gateway (v3)",
+    "apiKey": "JCxSF806JZq1TMUWRCF0maKkI",
+    "senderId": "Weskina",
+    "creditBalance": 300,
+    "smsRateGhc": 0.035,
+    "status": "Connected & Active",
+    "endpoint": "https://api.mnotify.com/api/sms/quick"
+  },
+  "stats": {
+    "totalStaff": 2486,
+    "smsSentToday": 1245,
+    "deliveredToday": 1192,
+    "failedToday": 53,
+    "pendingToday": 0,
+    "monthlySent": 18450,
+    "deliveryRate": 95.7
+  }
+}

@@ -6,9 +6,13 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "seed:db": "bun run scripts/init_sqlite_db.js",
+    "seed:supabase": "bun run scripts/seed_supabase.js"
   },
   "dependencies": {
+    "@supabase/supabase-js": "^2.114.0",
+    "lucide-react": "^1.40.0",
     "next": "16.3.4",
     "react": "19.2.8",
     "react-dom": "19.2.8"
