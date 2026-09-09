@@ -1,6 +1,8 @@
 import { NextResponse } from "next/server";
 import { supabase } from "@/lib/supabaseClient";
 
+export const dynamic = "force-dynamic";
+
 export async function GET() {
   try {
     const { data: history, error } = await supabase.from("sms_history").select("*");

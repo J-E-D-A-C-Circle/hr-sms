@@ -27,6 +27,7 @@ export default function SendSmsView() {
   const [selectedStaff, setSelectedStaff] = useState([]);
   const [selectedGroups, setSelectedGroups] = useState([]);
   const [staffSearchQuery, setStaffSearchQuery] = useState("");
+  const [messageText, setMessageText] = useState("");
   const [senderId, setSenderId] = useState(envSenderId);
   const [sendOption, setSendOption] = useState("now"); // "now", "schedule"
   const todayYYYYMMDD = new Date().toISOString().split("T")[0];
